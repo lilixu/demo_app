@@ -1,6 +1,6 @@
 DemoApp::Application.routes.draw do
   get "page/home"
-  get "page/about"
+  get "pages/about"
   get "page/contact"
 
   resources :users

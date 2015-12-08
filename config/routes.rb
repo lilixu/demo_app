@@ -2,9 +2,10 @@ DemoApp::Application.routes.draw do
   get "page/home"
   get "page/about"
   get "page/contact"
-match'/contact',:to=>/pages#contact'
-match'/about',:to=>/pages#about'
-match'/help',:to=>/pages#help'
+match'/contact',:to=>'pages#contact'
+match'/about',:to=>'pages#about'
+match'/help',:to=>'pages#help'
+match'/signup',:to=>'users#new'
 root:to =>'pages#home'
 
   resources :users
